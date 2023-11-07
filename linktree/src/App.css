@@ -1,0 +1,164 @@
+
+.profile {
+  z-index: 2; 
+  margin-top: 40px;
+  text-align: center;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes continuousColorChange {
+  0% {
+    color: #ff0000; /* Start with red */
+  }
+  25% {
+    color: #00ff00; /* Change to green */
+  }
+  50% {
+    color: #0000ff; /* Change to blue */
+  }
+  75% {
+    color: #ff00ff; /* Change to magenta */
+  }
+  100% {
+    color: #ff0000; /* Return to red */
+  }
+}
+
+@keyframes moveRight {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes moveBackAndForth {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50vw);
+  }
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.profile h1 {
+  z-index: 2; 
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+  /* font-family: cursive; */
+  /* font-family: monospace; */
+  font-family: "Comic Sans MS", cursive;
+  /* font-family: "Palatino", serif; */
+
+  text-align: center;
+  /* animation: fadeIn 1s ease-in; Apply the fadeIn animation with a 1-second duration */
+  /* animation: continuousColorChange 5s infinite; Apply continuousColorChange animation with a 5-second duration and infinite iteration */
+  animation:  continuousColorChange 10s infinite ; /*Apply the moveRight animation with a 5-second duration and infinite iteration */
+}
+.card-list {
+  display: flex;
+  z-index: 2; /* Set a higher z-index value */
+  flex-direction: column; /* Stack cards vertically */
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.app-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Full viewport height */
+}
+.card-list a {
+  text-decoration: none;
+}
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* .App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+} */
+
+/*******************************************************/
+
+.top-section {
+  text-align: center;
+  padding: 20px;
+  z-index: 2; 
+}
+
+.top-section h1 {
+  font-size: 36px;
+  z-index: 2; 
+  font-size: 50px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.top-section p {
+  font-size: 18px;
+  z-index: 2; 
+  font-size: 25px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.top-section img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 20px 0;
+  z-index: 2; 
+}
+
+/* CSS for the bottom section (Profile Dump) */
+.bottom-section {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.bottom-section h2 {
+  font-size: 24px;
+  color: #ffffff;
+  /* Add other styles for the "Profile Dump" heading if needed */
+}
+
+
+
+
+
+
+
+
