@@ -1,0 +1,53 @@
+.card {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 500px; /* Increase the width as needed */
+    height: 200px; /* Increase the height as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+  }
+  @keyframes continuousColorChange {
+    0% {
+      color: #ff0000; /* Start with red */
+    }
+    25% {
+      color: #00ff00; /* Change to green */
+    }
+    50% {
+      color: #0000ff; /* Change to blue */
+    }
+    75% {
+      color: #ff00ff; /* Change to magenta */
+    }
+    100% {
+      color: #ff0000; /* Return to red */
+    }
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  .card h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Comic Sans MS", cursive;
+    /* animation:  continuousColorChange 10s infinite */
+
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
