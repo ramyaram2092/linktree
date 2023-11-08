@@ -2,7 +2,7 @@
 import './App.css';
 import Card from  './components/card/Card.js';
 // import ParticleBackground from 'react-particle-backgrounds'
-import ParticlesConfig from './config/ParticlesConfig';
+// import ParticlesConfig from './config/ParticlesConfig';
 
 import { useCallback } from "react";
 import Particles from "react-particles";
