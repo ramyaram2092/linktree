@@ -14,6 +14,7 @@ import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSli
 
 function App() {
   const data = [
+    { title: "Resume", description: "https://www.linkedin.com/in/ramya-ramasamy-b4357078/overlay/1635549417217/single-media-viewer/?profileId=ACoAABB0-WMBprnpC_xP4fsXAdR2W9TB1cQHdw0" },
     { title: "My Journey", description: "https://www.youtube.com/watch?v=xbDW_cBJ-wE&ab_channel=RamyaRamasamy" },
     { title: "LinkedIn", description: "https://www.linkedin.com/in/ramya-ramasamy-b4357078/" },
     { title: "GitHub", description: "https://github.com/ramyaram2092" },
@@ -33,16 +34,15 @@ const particlesLoaded = useCallback(async container => {
     await console.log(container);
 }, []);
   return (
-   <div className="app-container">
-
-       <Particles
+    <div>
+     <Particles
             id="tsparticles"
             init={particlesInit}
             loaded={particlesLoaded}
             options={{
                 background: {
                     color: {
-                        value: "#000000",
+                        value: "0f0f0f",
                     },
                 },
                 fpsLimit: 120,
@@ -108,12 +108,11 @@ const particlesLoaded = useCallback(async container => {
                 },
                 detectRetina: true,
             }}
-        />
-        {/* <div className="top-section">
-        <h1>Ramya Ramasasmy</h1>
-        <p>Your brief introduction goes here.</p>
-        <img src="your-profile-picture-url" alt="Your Picture" />
-      </div> */}
+        />   
+    {/* <div className="top-section">
+        <h1> Ramya Ramasamy </h1>
+    </div> */}
+   <div className="app-container">
       <div className="profile">
       <h1>Profile Dump</h1> {/* Add the heading here */}
 
@@ -121,6 +120,7 @@ const particlesLoaded = useCallback(async container => {
       {data.map((item, index) => (
         <Card key={index} title={item.title} url={item.description} />
       ))}
+    </div>
     </div>
     </div>
     </div>
